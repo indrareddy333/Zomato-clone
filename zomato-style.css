@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.zomato-hero{
+    background-image: url(media/Zomato-background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+}
+.navigation-center{
+    display: flex;
+    justify-content: center;
+    transform:none
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 20px
+
+}
+.get-app{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+}
+.resize-app{
+    font-size: smaller;
+}
+.navi a{
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: Roboto;
+  font-weight: 300;
+  padding-right: 20px;
+} 
+.logo-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.logo img{
+    width: 260px;
+    height: 60px;
+}
+.logo-para p{
+    margin-top: 30px;
+    color: white;
+    font-size: 35px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+.input-box{
+    margin-top: 30px;
+    width: 765px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+.input-flex{
+    display: flex;
+}
+
+.location{
+   width: 253px;
+   height: 50px;
+   display: flex;
+}
+.search-button{
+    width: 54px;
+    height: 50px;
+    text-align: center;
+    padding-top: 16px;
+    color: grey;
+}
+.serchinput{
+    width: 480px;
+    height: 50px;
+}
+.locate{
+    padding-top: 16px;
+    padding-left: 10px;
+    color: #FF7E8B;
+    width: 20px;
+    height: 20px;
+}
+.location select{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    margin-left: 6px;
+    color: grey;
+    font-family: Roboto;
+    font-family: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+.location select:focus{
+   border: none;
+   outline: none;
+}
+.grip-line{
+    padding:13px;
+    font-size:20px;
+    color: grey;
+}
+.search-button i{
+    width: 18px;
+    height: 18px;
+}
+.input-search-box{
+    width: 480px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+}
+.input-search-box:focus{
+    border: none;
+    outline: none;
+}
+.visiting{
+    display: flex;
+    justify-content: center;
+}
+.visiting-box{
+    width: 1150px;
+    height: 260px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 360px;
+    height: 260px;
+    border: 1px solid #e3e1e1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card:hover{
+ transform: scale(1.1);
+ z-index: 1;
+}
+.card-img{
+    height: 156px;
+    width: 360px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-head{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #36363C;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.card-caption{
+    color: rgb(105, 103, 103);
+    font-family: Roboto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.cardlink{
+    text-decoration: none;
+}
+.collections{
+    display: flex;
+    justify-content: center;
+}
+.collection-boxes{
+    width: 1150px;
+    height: 420px;
+}
+.collect{
+    font-family: Roboto;
+    font-size: 35px;
+}
+.caption{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.caption-para{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 17px;
+    color: rgb(77, 76, 76);
+}
+.caption-link a{
+    text-decoration: none;
+    color: #FF7E8B;
+    font-family: Roboto; 
+    font-weight: 300;
+    font-size: 17px;
+}
+.arrow{
+    padding-left: 10px;
+}
+.cards-collect{
+    display: flex;
+    justify-content: space-between;
+}
+.card-colect-box{
+    margin-top: 2%;
+    width: 265px;
+    height: 320px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.card-colect-box-one{
+    width: 265px;
+    height: 320px;
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%), url(media/collect-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.card-colect-box-two{
+    width: 265px;
+    height: 320px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%),  url(media/collect-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.card-colect-box-three{
+    width: 265px;
+    height: 320px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%),  url(media/collect-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+.card-colect-box-four{
+    width: 265px;
+    height: 320px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%), url(media/collect-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;  
+}
+.card-colect-box-caption{
+    padding-left: 10px;
+    font-family: Roboto;
+    font-size: larger;
+}
+.card-colect-box-places{
+    padding-left: 10px;
+    font-family: Roboto;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+.popular{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.popular-box{
+    width: 1150px;
+    height: 370px;
+}
+.popular-head{
+    font-size: 32px;
+    font-family: Roboto;
+    color: rgb(50, 49, 49);
+    font-weight: 300;
+}
+.popular-bold{
+   font-weight: 400;
+}
+.boxes-pop{
+    margin-top: 55px;
+    width: 1150px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.box-card{
+    width:356px;
+    height: 78px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px rgb(237, 234, 234);
+}
+.box-card:hover{
+    box-shadow: 1px 2px 1px rgb(177, 177, 177);
+}
+.linking-pop{
+    display: flex;
+    justify-content: space-around;
+    gap: 180px;
+}
+.pop-link{
+    width:356px;
+    height: 78px;
+    text-decoration: none;
+    color: black;
+    
+}
+.para-pop-para{
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 13px;
+}
+.para-pop-places{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 7px;
+}
+.Arrow{
+    font-size: 20px;
+    padding-top: 28px;
+}
+.container-app{
+    margin-top: 100px;
+    width: 100%;
+    height: 480px;
+    background-color: #FFFBF7;
+}
+.Zomato-container
+{
+    display: flex;
+    justify-content: center;
+}
+.Zomato-app{
+    margin-top: 40px;
+    width:740px;
+    height: 450px;
+}
+.apps-content img{
+    width: 250px;
+    height: 450px;
+    object-fit:contain;
+}
+.content-info{
+    width: 100%;
+    height: 450px;
+}
+.two-app-zomato{
+    display: flex;
+}
+.Zomato-get{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    word-spacing: 5px;
+}
+.Zomato-app-caption{
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 20px;
+    word-spacing: 3px;
+    line-height: 28px;
+    font-size: 17px;
+}
+.Email-Phone{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 35px;
+    margin-top: 20px;
+}
+.email-radio,.phone-radio{
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+.zomato-search-link{
+    margin-top: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.zomato-search-link a{
+    text-decoration: none;
+}
+.search-zomato{
+    width: 295px;
+    height: 45px;
+}
+.search-zomato-input{
+    width: 295px;
+    border: 1px solid rgb(205, 204, 204);
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: Roboto;
+    font-size: medium;
+    color: #74747f;
+    font-weight: 300;
+}
+.share-link{
+   width: 165px;
+   height: 45px;
+   border: 1px solid;
+   border: none;
+   background-color: #E03546;
+   border-radius: 5px;
+}
+.share-link p{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto;
+    text-align: center;
+    padding-top: 13px;
+    font-weight: 300;
+}
+.search-zomato-input::placeholder{
+ font-size: 17px;
+ color: #c1c1c2;
+ font-family: Roboto;
+ font-weight: 300;
+}
+.search-zomato-input:focus{
+    outline: none;
+}
+.dow-app{
+    font-size: larger;
+    font-family: Roboto;
+    margin-top: 20px;
+    font-weight: 200;
+}
+.app-link{
+  width:300px;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-store{
+    width: 137px;
+    height: 40px;
+    background-image: url(./media/playstore-app-zomato.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.ios-store{
+    width: 137px;
+    height: 40px;
+    background-image: url(./media/ios-app-zomato.webp);
+    background-size: cover;
+    background-position: center;
+}
+.container-explore{
+    width: auto;
+    height: 500px;
+    background-color: #FCFCFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.explore-options{
+    width: 1090px;
+    height: 400px;
+
+}
+.head-explore{
+    font-size:26px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-spacing: 3px;
+}
+.explore-near{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.container-explore1,.container-explore2,.container-explore3,.container-explore4{
+    width: auto;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(250, 249, 249, 0.2), 0 6px 20px 0 rgba(235, 235, 235, 0.19);
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.content-ex p{
+    color: rgb(100, 99, 99);
+    font-size: larger;
+    font-family: Roboto;
+    padding: 17px;
+}
+.explore-near a{
+    text-decoration: none;
+}
+.zom-footer{
+    width: auto;
+    height: 480px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+}
+.footer-links{
+    width: 1000px;
+    height: 500px;
+}
+.zom-logo-foot-link{
+    width: auto;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.zom-logo{
+    width: 132px;
+    height: 40px;
+}
+.lan-india{
+    width: 252px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.contry-select,.lan-select{
+    width: 110px;
+    height: 38px;
+}
+.foot-nav{
+    width: auto;
+    height: 320px;
+    margin-top: 30px;
+    display: flex;
+}
+.nav-links,.nav-links2,.nav-links3,.nav-links4,.nav-links5{
+    width: 230px;
+    height: 320px;   
+}
+.head-link{
+    font-family: Roboto;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.zom-in-row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.zomato-links-nav{
+    text-decoration: none;
+    color: #7d7d85;
+    font-family: Roboto;
+    font-weight: 300;
+}
+.social-link{
+    display: flex;
+    gap: 15px;
+}
+.social-logo-link{
+    font-size: 25px;
+}
+.circle{
+    border-radius: 50px;
+    color: #36363C;
+    margin-top: 10px;
+}
+.app-store{
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.play-store-zom img{
+    width: 140px;
+    height: 40px;
+}
+.ios-store-zom img{ 
+    width: 140px;
+    height: 40px;
+}
+.copyright-foot{
+    margin-top: 14px;
+}
+.copy-right{
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #7f7f88;
+}
